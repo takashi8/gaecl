@@ -30,7 +30,7 @@ setup(
     install_requires=['google-cloud-logging', 'werkzeug'],
     project_urls={
         'Bug Reports': 'https://github.com/takashi8/gaecl/issues',
-        'Say Thanks!': 'https://github.com/takashi8/gaecl#say-thanks',
+        'Say Thanks!': 'https://github.com/takashi8/gaecl#thanks-for-using',
         'Source': 'https://github.com/takashi8/gaecl',
     },
 )
