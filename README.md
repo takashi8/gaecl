@@ -36,7 +36,6 @@ def log():
     logging.info('info log')
     logging.warn('warn log')
     logging.error('error log')
-    logging.critical('critical log')
     return 'ok'
 ```
 
@@ -44,11 +43,12 @@ See collerated log on cloud console
 ---
 
 Choose **app** log on console to show parent log.
+
 You can also see each child log separately by adding **app_child**.
 
 ![choose app log](https://user-images.githubusercontent.com/2031193/57907426-5eb8dd80-78b8-11e9-9b82-ac329ea12708.png "Choose app log")
 
-Now your logs in a single request is collerated.
+Now your logs in a single request are collerated.
 
 ![collerated log](https://user-images.githubusercontent.com/2031193/57907442-68dadc00-78b8-11e9-9066-0fbd43a265ee.png "Collerated log")
 
