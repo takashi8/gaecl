@@ -21,6 +21,7 @@ class RequestLogger(object):
         version=None,
         log_name=None,
         child_log_name=None,
+        log_type=None,
     ):
         """
         Args:
@@ -42,6 +43,8 @@ class RequestLogger(object):
 
         self.request_data = request_data or {}
         self.trace = trace
+
+        self.log_type = log_type or 'gae_app'
         self.resource = self.get_resource()
 
         log_name = log_name or 'app'
@@ -58,7 +61,7 @@ class RequestLogger(object):
             dict: Resource information
         """
         resource = gcloud_logging.resource.Resource(
-            type='gae_app',
+            type=self.log_type,
             labels={
                 'project_id': self.project,
                 'module_id': self.module,
