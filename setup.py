@@ -27,7 +27,10 @@ setup(
     keywords='google app engine stackdriver',
     packages=find_packages(exclude=['docs', 'tests']),
     python_requires='>=3.6',
-    install_requires=['google-cloud-logging', 'werkzeug'],
+    install_requires=[
+        'google-cloud-logging>=1,<2',
+        'werkzeug'
+    ],
     project_urls={
         'Bug Reports': 'https://github.com/takashi8/gaecl/issues',
         'Say Thanks!': 'https://github.com/takashi8/gaecl#thanks-for-using',
